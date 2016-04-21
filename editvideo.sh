@@ -451,5 +451,3 @@ say "editing procedure complete"
 echo
 
 rm -f tmp_*
-
-#test dvd making
