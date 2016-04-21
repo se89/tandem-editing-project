@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####
-# 
+# edits raw files
 ####
 
 
