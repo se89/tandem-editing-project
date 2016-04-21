@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####
-# extracts frames from a video called GOPR****.MP4 located in a folder in Desktop with the name of the student 
+# extracts frames from a video
 ####
 
 
