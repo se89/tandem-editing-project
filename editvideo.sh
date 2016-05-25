@@ -4,6 +4,14 @@
 # edits raw files
 ####
 
+if [ -e /usr/bin/lsb_release ]; then
+   for file_to_check in mplayer ffprobe ffmpeg dvdauthor mkisofs cdrecord say
+   do
+       which "$file_to_check" > /dev/null || error="\n$error $file_to_check"
+   done
+
+   [ -n "$error" ] && echo -e "Please refer to readme.pdf and fix installation for: $error" && exit
+fi
 
 RED='\033[1;31m'
 NC='\033[0m' # No Color
@@ -31,7 +39,6 @@ echo -e "${GREEN}
  * ----------------------------------------------------------------------------${NC}"
 echo
 echo
-
 
 if [ -f studir.txt ]; then read studentdir < studir.txt ; else studentdir=~/Desktop ; fi
 
